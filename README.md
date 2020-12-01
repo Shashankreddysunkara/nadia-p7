@@ -71,5 +71,9 @@ Install the nginx: nginx.yml
 Install PHP7.2-FPM with modules: php7.yml
 Install wordpress: deploy.yml
 
-ansible-playbook site.yml --private-key=path/to/key -u ubuntu
+ansible-playbook site.yml
+
+## Use custom connexion 
+
+`ssh -F ./ansible/ssh.cfg 10.0.10.71`
 
